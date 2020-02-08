@@ -1,5 +1,5 @@
-<a class="item">
-        Chatroom
+<a>
+  <%= link_to "Chatroom", root_path, class:'ui item'%>
 </a>
 <a class="item">
   Messages
@@ -9,7 +9,7 @@
     Account <i class="dropdown icon"></i>
     <div class="menu">
       <a class="item">Log out</a>
-      <a class="item">Log in</a>
+      <a><%= link_to "log in", login_path, class:'ui black item'%></a>
       <a class="item">Sign up</a>
     </div>
   </div>
